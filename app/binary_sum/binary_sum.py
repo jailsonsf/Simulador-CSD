@@ -18,4 +18,4 @@ class BinarySum:
         number2 = converter.bin2dec(number2)
         result = converter.dec2bin(number1 + number2)
 
-        print(result)
+        print(f'Resultado: {result}')

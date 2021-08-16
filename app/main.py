@@ -4,6 +4,7 @@ from app.utils import clear
 from app.unit_converter.unit_converter import UnitConverter
 from app.base_converter.base_converter import Base_converter
 from app.binary_sum.binary_sum import BinarySum
+from app.logic_gates.logic_gates import LogicGates
 
 
 class App:
@@ -42,6 +43,7 @@ class App:
 
             elif option == 4:
                 print(f'Opção [{option}]: Operações com portas lógicas')
+                LogicGates()
                 sleep(1)
 
             elif option == 5:
