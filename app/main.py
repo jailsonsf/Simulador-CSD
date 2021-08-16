@@ -5,19 +5,16 @@ from app.unit_converter.unit_converter import UnitConverter
 from app.base_converter.base_converter import Base_converter
 from app.binary_sum.binary_sum import BinarySum
 from app.logic_gates.logic_gates import LogicGates
+from app.boolean_algebra.boolean_algebra import BooleanAlgebra
 
 
 class App:
     def __init__(self) -> None:
         clear()
+        menu = f'Digite [0] para Sair\nDigite [1] para converter unidades\nDigite [2] para converter bases\nDigite [3] para realizar soma binária\nDigite [4] para realizar operações de portas lógicas\nDigite [5] para analisar expressão da álgebra booleana'
         while True:
             print('='*40)
-            print(f'Digite [0] para Sair')
-            print(f'Digite [1] para converter unidades')
-            print(f'Digite [2] para converter bases')
-            print(f'Digite [3] para realizar soma binária')
-            print(f'Digite [4] para realizar operações de portas lógicas')
-            print(f'Digite [5] para analisar expressão da álgebra relacional')
+            print(menu)
             option = int(input('>>> '))
 
             if option == 0:
@@ -48,7 +45,8 @@ class App:
 
             elif option == 5:
                 print(
-                    f'Opção [{option}]: Analisar expressões da álgebra relacional')
+                    f'Opção [{option}]: Analisar expressões da álgebra booleana')
+                BooleanAlgebra()
                 sleep(1)
 
             else:
