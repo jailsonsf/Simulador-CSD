@@ -24,7 +24,7 @@ class Base_converter:
         print(f'Selecione a base numérica original')
         self.show_bases()
 
-        option = int(input('>> '))
+        option = int(input('>>> '))
 
         if option not in bases.keys():
             print(f'Opção inválida!')
@@ -36,7 +36,7 @@ class Base_converter:
         print(f'Selecione a base numérica para qual deseja converter:')
         self.show_bases()
 
-        option = int(input('>> '))
+        option = int(input('>>> '))
 
         if option not in bases.keys():
             print(f'Opção inválida!')
@@ -46,7 +46,7 @@ class Base_converter:
 
     def get_value(self) -> None:
         print(f'Digite o valor na {self.original_base}:')
-        self.value = input('>> ')
+        self.value = input('>>> ')
 
     def converter(self) -> None:
         converter = Converter()

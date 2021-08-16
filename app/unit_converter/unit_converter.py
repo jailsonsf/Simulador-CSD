@@ -22,7 +22,7 @@ class UnitConverter:
         print(f'Selecione a unidade de medida para qual fornecerá um valor:')
         self.show_units()
 
-        option = int(input('>> '))
+        option = int(input('>>> '))
 
         if option not in units.keys():
             print(f'Opção inválida!')
@@ -34,7 +34,7 @@ class UnitConverter:
         print(f'Selecione a unidade de medida para qual deseja converter:')
         self.show_units()
 
-        option = int(input('>> '))
+        option = int(input('>>> '))
 
         if option not in units.keys():
             print(f'Opção inválida!')
@@ -44,7 +44,7 @@ class UnitConverter:
 
     def get_value(self) -> None:
         print(f'Digite o valor em {self.unit_provide}:')
-        self.value = float(input('>> '))
+        self.value = float(input('>>> '))
 
     def converter(self) -> None:
         for key in units:
