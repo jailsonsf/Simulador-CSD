@@ -39,9 +39,6 @@ class UnitConverter:
         if option not in units.keys():
             print(f'Opção inválida!')
 
-        elif option == self.unit_provide:
-            print(f'Escolha uma unidade diferente para fazer a converção!')
-
         else:
             self.unit_converter = units[option]
 
@@ -58,8 +55,7 @@ class UnitConverter:
                 unit_converter_num = key
 
         if self.unit_provide == self.unit_converter:
-            print(
-                f'{self.value} {self.unit_provide} equivalem a {self.value} {self.unit_converter}')
+            print('Selecione unidades diferentes!')
 
         elif unit_provide_num > unit_converter_num:
             multiplications = abs(unit_provide_num - unit_converter_num)

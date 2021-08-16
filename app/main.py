@@ -2,6 +2,7 @@ from time import sleep
 from app.utils import clear
 
 from app.unit_converter.unit_converter import UnitConverter
+from app.base_converter.base_converter import Base_converter
 
 
 class App:
@@ -24,12 +25,13 @@ class App:
                 break
             elif option == 1:
                 print(f'Opção [{option}]: Conversão de unidades de medida')
-                converter = UnitConverter()
+                UnitConverter()
 
                 sleep(1)
 
             elif option == 2:
                 print(f'Opção [{option}]: Conversão de bases numéricas')
+                Base_converter()
                 sleep(1)
 
             elif option == 3:
